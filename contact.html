@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Liên hệ &amp; Hệ thống Cơ sở | HealthCare Clinic Vietnam</title>
+<!-- Material Symbols Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Brand Typography Fonts: Plus Jakarta Sans, Manrope, Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with CDN Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Verbatim Tailwind Config Theme -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#dae2fd",
+            "tertiary-fixed": "#6ffbbe",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#3d4947",
+            "on-secondary-container": "#006f67",
+            "background": "#faf8ff",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "outline-variant": "#bcc9c6",
+            "tertiary": "#006947",
+            "surface": "#faf8ff",
+            "secondary-fixed": "#9cf2e8",
+            "primary-container": "#008378",
+            "on-primary-fixed": "#00201d",
+            "on-tertiary": "#ffffff",
+            "on-background": "#131b2e",
+            "secondary-fixed-dim": "#80d5cb",
+            "on-primary-container": "#f4fffc",
+            "surface-variant": "#dae2fd",
+            "primary-fixed-dim": "#6bd8cb",
+            "surface-tint": "#006a61",
+            "on-tertiary-fixed": "#002113",
+            "on-primary-fixed-variant": "#005049",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#6bd8cb",
+            "primary": "#00685f",
+            "on-tertiary-fixed-variant": "#005236",
+            "secondary": "#006a63",
+            "tertiary-container": "#00855b",
+            "surface-container-high": "#e2e7ff",
+            "on-tertiary-container": "#f5fff6",
+            "secondary-container": "#99efe5",
+            "primary-fixed": "#89f5e7",
+            "surface-container-low": "#f2f3ff",
+            "surface-bright": "#faf8ff",
+            "on-secondary-fixed": "#00201d",
+            "surface-container": "#eaedff",
+            "inverse-on-surface": "#eef0ff",
+            "tertiary-fixed-dim": "#4edea3",
+            "on-surface": "#131b2e",
+            "error-container": "#ffdad6",
+            "surface-dim": "#d2d9f4",
+            "inverse-surface": "#283044",
+            "outline": "#6d7a77",
+            "on-secondary-fixed-variant": "#00504a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "space-xs": "0.25rem",
+            "margin-tablet": "1.5rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Manrope"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-mobile": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-lg": ["Manrope"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "label-md": ["Manrope"],
+            "title-md": ["Manrope"],
+            "body-sm": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "display": ["48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT 1: TopNavBar (Web Header with Responsive Pivot)           -->
+<!-- ========================================================================= -->
+<header class="docked full-width top-0 fixed z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 shadow-sm w-full">
+  <div class="flex justify-between items-center w-full px-6 lg:px-8 max-w-7xl mx-auto h-[72px]">
+    <!-- Brand Logo -->
+    <a class="flex items-center gap-2.5 transition-transform duration-150 active:scale-95 group" href="index.html">
+      <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm shadow-primary/20 group-hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined fill-icon text-2xl" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight leading-none">HealthCare</span>
+        <span class="text-[10px] tracking-wider text-outline uppercase font-semibold font-label-sm mt-1">Phòng Khám Quốc Tế</span>
+      </div>
+    </a>
+    <!-- Desktop Navigation Links -->
+    <nav aria-label="Điều hướng chính" class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium pb-1 text-label-lg font-label-lg hover:text-primary transition-colors duration-150" href="index.html">Trang chủ</a>
+        <a class="text-on-surface-variant font-medium pb-1 text-label-lg font-label-lg hover:text-primary transition-colors duration-150" href="services.html">Dịch vụ</a>
+        <a class="text-on-surface-variant font-medium pb-1 text-label-lg font-label-lg hover:text-primary transition-colors duration-150" href="doctors.html">Bác sĩ</a>
+        <a class="text-on-surface-variant font-medium pb-1 text-label-lg font-label-lg hover:text-primary transition-colors duration-150" href="about.html">Giới thiệu</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg transition-colors duration-150" href="contact.html">Liên hệ</a>
+    </nav>
+    <!-- Trailing Action Group -->
+    <div class="flex items-center gap-3 lg:gap-4">
+      <a class="hidden lg:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/40 border border-secondary-container text-on-secondary-container text-label-md font-label-md font-semibold transition-all hover:bg-secondary-container/70 active:scale-95" href="tel:19006868">
+        <span class="material-symbols-outlined text-base fill-icon text-primary" style="font-variation-settings: 'FILL' 1;">call</span>
+        <span>Hotline: 1900 6868</span>
+      </a>
+      <a class="bg-primary text-on-primary font-semibold text-label-lg font-label-lg px-5 py-2.5 rounded-xl shadow-sm hover:bg-primary-container transition-all duration-200 active:scale-95 flex items-center gap-1.5" href="booking.html">
+        <span class="material-symbols-outlined text-lg">calendar_month</span>
+        <span>Đặt lịch khám</span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- Mobile Bottom Navigation Bar -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/30 px-2 py-2 flex justify-around items-center shadow-lg">
+  <a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-primary text-[11px] font-medium" href="index.html">
+        <span class="material-symbols-outlined text-[20px]">home</span>
+        <span>Trang chủ</span>
+      </a>
+      <a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-primary text-[11px] font-medium" href="services.html">
+        <span class="material-symbols-outlined text-[20px]">medical_services</span>
+        <span>Dịch vụ</span>
+      </a>
+      <a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-primary text-[11px] font-medium" href="doctors.html">
+        <span class="material-symbols-outlined text-[20px]">stethoscope</span>
+        <span>Bác sĩ</span>
+      </a>
+      <a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-primary text-[11px] font-medium" href="about.html">
+        <span class="material-symbols-outlined text-[20px]">info</span>
+        <span>Giới thiệu</span>
+      </a>
+      <a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-primary text-[11px] font-medium" href="booking.html">
+        <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+        <span>Đặt lịch</span>
+      </a>
+      <a class="flex flex-col items-center gap-0.5 text-primary font-bold text-[11px]" href="contact.html">
+        <span class="material-symbols-outlined text-[20px]">support_agent</span>
+        <span>Liên hệ</span>
+      </a>
+</div>
+<!-- Spacer for Fixed Docked Header -->
+<div class="h-[72px]"></div>
+<main>
+<!-- ========================================================================= -->
+<!-- SECTION 1: HERO & EMERGENCY QUICK-ACCESS CHANNELS (4 Bento Cards)       -->
+<!-- ========================================================================= -->
+<section class="relative pt-10 pb-16 px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+<!-- Breadcrumb -->
+<nav aria-label="Đường dẫn trang" class="mb-4">
+<ol class="flex items-center gap-2 text-label-sm font-label-sm text-outline">
+<li><a class="hover:text-primary transition-colors" href="index.html">Trang chủ</a></li>
+<li><span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span></li>
+<li aria-current="page" class="text-primary font-bold">Liên hệ &amp; Hỗ trợ</li>
+</ol>
+</nav>
+<!-- Hero Header Section -->
+<div class="max-w-3xl mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-label-sm font-label-sm font-bold tracking-wider mb-4 border border-outline-variant/30">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>TRUNG TÂM HỖ TRỢ &amp; TIẾP NHẬN BỆNH NHÂN 24/7</span>
+</div>
+<h1 class="text-display-mobile md:text-display font-display text-on-background tracking-tight leading-tight mb-4">
+          Liên hệ với HealthCare — Luôn lắng nghe &amp; Đồng hành cùng sức khỏe của bạn
+        </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Đội ngũ điều dưỡng và bác sĩ trực sẵn sàng hỗ trợ tư vấn chuyên môn, điều phối lịch hẹn, giải đáp bảo hiểm y tế và tiếp nhận trường hợp khẩn cấp 24/7.
+        </p>
+</div>
+<!-- 4 Quick-Action Contact Channels (High-Precision Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Tổng đài Đặt hẹn & Tư vấn khám -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/50 text-secondary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="phone_in_talk">phone_in_talk</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline block mb-1">ĐẶT HẸN &amp; TƯ VẤN</span>
+<h2 class="text-title-md font-title-md text-on-surface mb-2 font-bold">Tổng đài Đặt hẹn</h2>
+<div class="text-headline-sm font-headline-sm font-bold text-primary mb-2">1900 6868</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+              Cước phí 1.000đ/phút. Hoạt động 07:00 - 20:00 hằng ngày kể cả cuối tuần &amp; ngày lễ.
+            </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-primary text-on-primary text-label-md font-label-md font-bold hover:bg-primary-container transition-colors" href="tel:19006868">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+<span>Gọi đặt lịch ngay</span>
+</a>
+<a class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-surface-container-low text-primary text-label-md font-label-md font-semibold hover:bg-surface-container transition-colors" href="booking.html">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>Chat Zalo OA</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Emergency Alert Styling (Red Accent for Triage) -->
+<div class="bg-surface-container-lowest border-2 border-error/40 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-error-container/30 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl animate-pulse" data-icon="emergency">emergency</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm font-bold mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+              TRỰC CẤP CỨU 24/7
+            </div>
+<h2 class="text-title-md font-title-md text-on-surface mb-1 font-bold">Cấp cứu &amp; Lưu viện</h2>
+<div class="text-headline-sm font-headline-sm font-bold text-error mb-2">(024) 7300 6868</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+              Tiếp nhận điều phối xe cấp cứu, cấp cứu nội khoa, xử trí tai nạn và can thiệp hồi sức tức thì.
+            </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-error text-on-error text-label-md font-label-md font-bold hover:opacity-95 transition-colors shadow-sm" href="tel:02473006868">
+<span class="material-symbols-outlined text-base" data-icon="e911_emergency">e911_emergency</span>
+<span>Gọi cấp cứu ngay</span>
+</a>
+<div class="text-center text-body-sm font-body-sm text-on-surface-variant font-medium">Hotline di động: 0912 345 678</div>
+</div>
+</div>
+<!-- Card 3: Bảo lãnh viện phí & Bảo hiểm -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline block mb-1">CHÍNH SÁCH BỆNH NHÂN</span>
+<h2 class="text-title-md font-title-md text-on-surface mb-2 font-bold">Bảo hiểm &amp; Viện phí</h2>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface mb-2">(028) 3822 6868</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+              Hỗ trợ thủ tục bảo lãnh trực tiếp cho hơn 30 đơn vị bảo hiểm tư nhân &amp; giải đáp quyền lợi BHYT.
+            </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container text-on-surface text-label-md font-label-md font-semibold hover:bg-surface-container-high transition-colors" href="mailto:baohiem@healthcare.vn">
+<span class="material-symbols-outlined text-base" data-icon="mail">mail</span>
+<span>baohiem@healthcare.vn</span>
+</a>
+<span class="block text-center text-body-sm font-body-sm text-outline">Bấm phím 2 khi kết nối tổng đài</span>
+</div>
+</div>
+<!-- Card 4: CSKH & Tiếp nhận Góp ý -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="support_agent">support_agent</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline block mb-1">CHẤT LƯỢNG DỊCH VỤ</span>
+<h2 class="text-title-md font-title-md text-on-surface mb-2 font-bold">CSKH &amp; Góp ý</h2>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface mb-2">cskh@healthcare.vn</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+              Cam kết phản hồi bằng văn bản trong vòng 24 giờ làm việc. Lắng nghe mọi ý kiến để hoàn thiện.
+            </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container text-on-surface text-label-md font-label-md font-semibold hover:bg-surface-container-high transition-colors" href="services.html">
+<span class="material-symbols-outlined text-base" data-icon="rate_review">rate_review</span>
+<span>Gửi phản ánh dịch vụ</span>
+</a>
+<span class="block text-center text-body-sm font-body-sm text-outline">Ban Giám đốc trực tiếp xử lý</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 2: ASYMMETRIC SPLIT (Consultation Form 5 Cols : Branch Directory 7 Cols) -->
+<!-- ========================================================================= -->
+<section class="py-12 px-6 lg:px-8 max-w-7xl mx-auto border-t border-outline-variant/30">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN (5/12): Patient Consultation Form -->
+<div class="lg:col-span-5 bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 lg:p-8 shadow-sm" id="tu-van">
+<div class="mb-6">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm font-bold mb-3">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+<span>BẢO MẬT CHUẨN Y KHOA</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface tracking-tight font-bold mb-2">
+              Gửi Yêu Cầu Tư Vấn &amp; Giải Đáp Thắc Mắc
+            </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Đội ngũ bác sĩ và điều dưỡng điều phối trực sẽ liên hệ hỗ trợ bạn trong vòng 15 phút làm việc.
+            </p>
+</div>
+<form class="space-y-4" id="form-tu-van" onsubmit="event.preventDefault(); alert('Cảm ơn quý khách! Yêu cầu hỗ trợ đã được gửi thành công. Bác sĩ trực sẽ liên hệ trong 15 phút.');">
+<!-- Full Name -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-bold" for="fullname">Họ và tên bệnh nhân / Người liên hệ *</label>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="fullname" placeholder="Nguyễn Văn An" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline text-lg pointer-events-none" data-icon="person">person</span>
+</div>
+</div>
+<!-- Phone & Email Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-bold" for="phone">Số điện thoại *</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="phone" placeholder="0912 345 678" required="" type="tel"/>
+<span class="text-body-sm font-body-sm text-outline text-[11px] block mt-0.5">Nhận SMS/Zalo tư vấn</span>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-bold" for="email">Địa chỉ Email</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="email" placeholder="nguyenvanan@gmail.com" type="email"/>
+</div>
+</div>
+<!-- Topic Radio Selection -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-2 font-bold">Nhu cầu cần hỗ trợ *</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-outline-variant/60 hover:border-primary cursor-pointer transition-colors bg-surface">
+<input checked="" class="text-primary focus:ring-primary" name="topic" type="radio" value="trieu-chung"/>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Tư vấn triệu chứng ban đầu</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-outline-variant/60 hover:border-primary cursor-pointer transition-colors bg-surface">
+<input class="text-primary focus:ring-primary" name="topic" type="radio" value="bao-hiem"/>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Viện phí &amp; Bảo hiểm</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-outline-variant/60 hover:border-primary cursor-pointer transition-colors bg-surface">
+<input class="text-primary focus:ring-primary" name="topic" type="radio" value="doanh-nghiep"/>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Khám đoàn doanh nghiệp</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-outline-variant/60 hover:border-primary cursor-pointer transition-colors bg-surface">
+<input class="text-primary focus:ring-primary" name="topic" type="radio" value="gop-y"/>
+<span class="text-body-sm font-body-sm text-on-surface font-medium">Góp ý chất lượng</span>
+</label>
+</div>
+</div>
+<!-- Clinic Branch Selection Dropdown -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-bold" for="branch-select">Cơ sở mong muốn hỗ trợ</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="branch-select">
+<option value="cs1">Cơ sở 1: Hoàn Kiếm, Hà Nội (45 Lý Thường Kiệt)</option>
+<option value="cs2">Cơ sở 2: Quận 1, TP. Hồ Chí Minh (82 Lê Thánh Tôn)</option>
+<option value="cs3">Cơ sở 3: Long Biên, Hà Nội (120 Nguyễn Văn Cừ)</option>
+</select>
+</div>
+<!-- Message Textarea -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-bold" for="message">Nội dung chi tiết câu hỏi hoặc triệu chứng</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="message" placeholder="Mô tả cụ thể triệu chứng, thời gian xuất hiện, hoặc thắc mắc của bạn về danh mục khám..." rows="3"></textarea>
+</div>
+<!-- Checkbox Privacy -->
+<div class="flex items-start gap-2.5">
+<input class="mt-1 rounded text-primary focus:ring-primary" id="privacy-check" required="" type="checkbox"/>
+<label class="text-body-sm font-body-sm text-on-surface-variant" for="privacy-check">
+                Tôi đồng ý chia sẻ thông tin theo <a class="text-primary underline" href="contact.html">Chính sách bảo mật y tế</a> để bác sĩ trực liên hệ tư vấn chuyên môn.
+              </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary text-on-primary text-label-lg font-label-lg font-bold hover:bg-primary-container transition-all duration-200 active:scale-95 shadow-sm flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+<span>Gửi yêu cầu hỗ trợ ngay</span>
+</button>
+</form>
+</div>
+<!-- RIGHT COLUMN (7/12): Clinic Branch Directory -->
+<div class="lg:col-span-7 space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div>
+<span class="text-label-sm font-label-sm text-primary font-bold uppercase tracking-wider block">MẠNG LƯỚI PHÒNG KHÁM</span>
+<h2 class="text-headline-md font-headline-md text-on-surface font-bold">Hệ thống Cơ sở &amp; Phòng khám Đa khoa</h2>
+</div>
+<span class="text-body-sm font-body-sm text-outline">3 cơ sở tiêu chuẩn quốc tế</span>
+</div>
+<!-- Branch 1: Hoàn Kiếm, Hà Nội -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 rounded-2xl p-6 shadow-sm hover:border-primary/50 transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm font-bold mb-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  CƠ SỞ 1 • MIỀN BẮC
+                </div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface">Trung tâm Chuyên khoa Hoàn Kiếm (Hà Nội)</h3>
+</div>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-tertiary bg-tertiary-fixed/30 px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+                Đang mở cửa
+              </span>
+</div>
+<!-- Details List -->
+<div class="space-y-2.5 text-body-sm font-body-sm text-on-surface-variant mb-5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="location_on">location_on</span>
+<span><strong class="text-on-surface">Địa chỉ:</strong> 45 Lý Thường Kiệt, P. Trần Hưng Đạo, Q. Hoàn Kiếm, Hà Nội</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="phone">phone</span>
+<span><strong class="text-on-surface">Điện thoại:</strong> (024) 3939 6868 — Cấp cứu: 1900 6868 (Phím 1)</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="schedule">schedule</span>
+<span><strong class="text-on-surface">Thời gian làm việc:</strong> Thứ 2 - Chủ Nhật (07:00 - 20:00). Khám ngoài giờ đến 20:00.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="local_hospital">local_hospital</span>
+<span><strong class="text-on-surface">Cơ sở vật chất:</strong> 5 tầng chuyên khoa, Kiosk Check-in tự động, Máy MRI 3.0T, CT 128 dãy, Bãi đỗ xe ô tô ngầm miễn phí có nhân viên điều phối.</span>
+</div>
+</div>
+<!-- Branch Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-3 border-t border-surface-container">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container text-on-surface text-label-md font-label-md font-semibold hover:bg-surface-container-high transition-colors" href="contact.html">
+<span class="material-symbols-outlined text-base" data-icon="directions">directions</span>
+<span>Chỉ đường Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary text-label-md font-label-md font-bold hover:bg-primary-container transition-colors" href="booking.html">
+<span class="material-symbols-outlined text-base" data-icon="calendar_month">calendar_month</span>
+<span>Đặt lịch tại cơ sở này</span>
+</a>
+</div>
+</div>
+<!-- Branch 2: Bến Nghé, Quận 1, TP. Hồ Chí Minh -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 rounded-2xl p-6 shadow-sm hover:border-primary/50 transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm font-bold mb-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  CƠ SỞ 2 • MIỀN NAM
+                </div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface">Trung tâm Đa khoa Bến Nghé (TP. Hồ Chí Minh)</h3>
+</div>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-tertiary bg-tertiary-fixed/30 px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+                Khám Nhi 24/7
+              </span>
+</div>
+<!-- Details List -->
+<div class="space-y-2.5 text-body-sm font-body-sm text-on-surface-variant mb-5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="location_on">location_on</span>
+<span><strong class="text-on-surface">Địa chỉ:</strong> 82 Lê Thánh Tôn, P. Bến Nghé, Quận 1, TP. Hồ Chí Minh</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="phone">phone</span>
+<span><strong class="text-on-surface">Điện thoại:</strong> (028) 3822 6868 — Cấp cứu: 1900 6868 (Phím 2)</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="schedule">schedule</span>
+<span><strong class="text-on-surface">Thời gian làm việc:</strong> Thứ 2 - Chủ Nhật (07:00 - 20:00). Khoa Cấp cứu &amp; Khám Nhi trực 24/7.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="biotech">biotech</span>
+<span><strong class="text-on-surface">Cơ sở vật chất:</strong> Phòng xét nghiệm tự động Cobas Roche ISO 15189, Trung tâm Nội soi Tiêu hóa NBI, Đỗ xe ô tô tại toà nhà miễn phí.</span>
+</div>
+</div>
+<!-- Branch Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-3 border-t border-surface-container">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container text-on-surface text-label-md font-label-md font-semibold hover:bg-surface-container-high transition-colors" href="contact.html">
+<span class="material-symbols-outlined text-base" data-icon="directions">directions</span>
+<span>Chỉ đường Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary text-label-md font-label-md font-bold hover:bg-primary-container transition-colors" href="booking.html">
+<span class="material-symbols-outlined text-base" data-icon="calendar_month">calendar_month</span>
+<span>Đặt lịch tại cơ sở này</span>
+</a>
+</div>
+</div>
+<!-- Branch 3: Long Biên, Hà Nội -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 rounded-2xl p-6 shadow-sm hover:border-primary/50 transition-all duration-200">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-label-sm font-bold mb-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  CƠ SỞ 3 • KỸ THUẬT CAO
+                </div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface">Trung tâm Kỹ thuật cao Long Biên (Hà Nội)</h3>
+</div>
+<span class="text-body-sm font-body-sm text-outline">Chuyên khoa sâu</span>
+</div>
+<!-- Details List -->
+<div class="space-y-2.5 text-body-sm font-body-sm text-on-surface-variant mb-5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="location_on">location_on</span>
+<span><strong class="text-on-surface">Địa chỉ:</strong> 120 Nguyễn Văn Cừ, P. Bồ Đề, Q. Long Biên, Hà Nội</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="phone">phone</span>
+<span><strong class="text-on-surface">Hotline cơ sở:</strong> (024) 3878 6868</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5" data-icon="healing">healing</span>
+<span><strong class="text-on-surface">Chuyên khoa mũi nhọn:</strong> Cơ xương khớp, Thần kinh &amp; Phục hồi chức năng vận động công nghệ cao.</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-3 border-t border-surface-container">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container text-on-surface text-label-md font-label-md font-semibold hover:bg-surface-container-high transition-colors" href="contact.html">
+<span class="material-symbols-outlined text-base" data-icon="directions">directions</span>
+<span>Chỉ đường</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container text-primary text-label-md font-label-md font-bold hover:bg-surface-container-high transition-colors" href="booking.html">
+<span class="material-symbols-outlined text-base" data-icon="calendar_month">calendar_month</span>
+<span>Đăng ký khám chuyên gia</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 3: INTERACTIVE MAP VISUAL & FIRST-VISIT PATIENT DIRECTIONS GUIDE  -->
+<!-- ========================================================================= -->
+<section class="py-12 px-6 lg:px-8 max-w-7xl mx-auto border-t border-outline-variant/30" id="ban-do">
+<div class="mb-8">
+<span class="text-label-sm font-label-sm text-primary font-bold tracking-wider uppercase block">HƯỚNG DẪN DI CHUYỂN DÀNH CHO BỆNH NHÂN</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight">
+          Vị trí Phòng khám &amp; Hướng dẫn Tiếp đón Đầu tiên
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl mt-1">
+          Chúng tôi bố trí lối tiếp đón thuận tiện nhất cho người cao tuổi, phụ nữ có thai và bệnh nhân đi xe lăn, bảo đảm quy trình vào khám an toàn và không bị gián đoạn.
+        </p>
+</div>
+<!-- Map Visual Representation -->
+<div class="relative w-full rounded-2xl overflow-hidden border border-outline-variant/60 shadow-sm mb-8 bg-surface-container-low min-h-[360px] flex flex-col justify-end">
+<!-- Interactive Simulated Map Backdrop -->
+<img class="w-full h-96 object-cover" data-alt="A clean, modern satellite street overview map of central Hanoi, Vietnam, highlighting the clinical healthcare zone with soft teal location route markers. The style has bright clinical lighting, high contrast roadways, soft emerald navigational pins, and crisp typography without clutter." data-location="Hanoi, Vietnam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNZIu0lwqXailiIog1_x8HMPq4s9K9Nt1ozztlZ78ad0ATtVdn_zhXo7smNrZ2YYs8w_qYMfFdLfEO51ehmND5VUQL0_0JiYjg0OXyOM1HghtioGYlsw_Oo1AHZuOucpInPuX_MThD173QzVzcmhaSOhcBtlZgI_HExHxnLnlm79eykA_J1f39ygkSh4K8B61LZl631kTXjhhA-jSQRmu2ZzAFFy--faFWyOkwRoL58uwfl-mO0WTiehUFyCQjXR7oK-DR0DzGHw"/>
+<!-- Overlay HUD Badge (Floating over Map) -->
+<div class="absolute top-4 left-4 right-4 sm:right-auto sm:max-w-md bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl border border-outline-variant/40 shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="near_me">near_me</span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg font-bold text-on-surface">Vị trí trung tâm tiếp nhận</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Lối xe đỗ và đón trả ngay mặt tiền rộng 18m, không tắc nghẽn.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3 Guidance Badges for First-Time Visitors -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Guide 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="local_parking">local_parking</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface mb-2">Phương tiện cá nhân &amp; Bãi đỗ xe</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Miễn phí 100% đỗ xe ô tô và xe máy tại hầm B1-B2 của tất cả các cơ sở. Có trạm sạc xe điện VinFast tiêu chuẩn và đội ngũ bảo vệ trực đón tiếp hỗ trợ đỗ xe.
+          </p>
+</div>
+<!-- Guide 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="accessible">accessible</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface mb-2">Đón trả Taxi &amp; Hỗ trợ Xe lăn</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Sảnh đón có mái che chống mưa nắng tại cửa chính. Có đường dốc (ramp) tiêu chuẩn y tế và nhân viên điều dưỡng hỗ trợ xe lăn (Wheelchair) ngay khi người bệnh vừa xuống xe.
+          </p>
+</div>
+<!-- Guide 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/60 text-secondary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl" data-icon="directions_bus">directions_bus</span>
+</div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface mb-2">Phương tiện công cộng</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Điểm dừng xe buýt chỉ cách cổng phòng khám 50m. Tuyến xe 08, 09, 36, 40 (tại Hà Nội) và Tuyến xe 03, 19, 45 (tại Quận 1 TP.HCM). Cách ga Metro Bến Thành 350m.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- SECTION 4: RESPONSIVE ACCORDIONS (FAQ - Tiếp đón & Quyền lợi Bệnh nhân)  -->
+<!-- ========================================================================= -->
+<section class="py-12 px-6 lg:px-8 max-w-4xl mx-auto border-t border-outline-variant/30">
+<div class="text-center mb-10">
+<span class="text-label-sm font-label-sm text-primary font-bold tracking-wider uppercase block">GIẢI ĐÁP THỦ TỤC</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface font-bold tracking-tight">
+          Câu hỏi thường gặp về Tiếp đón &amp; Hỗ trợ
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mx-auto mt-2">
+          Thông tin chi tiết giúp bạn chuẩn bị tốt nhất trước khi đến thăm khám tại hệ thống phòng khám HealthCare.
+        </p>
+</div>
+<!-- FAQ Items -->
+<div class="space-y-4">
+<!-- Accordion 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-title-md font-title-md text-on-surface cursor-pointer list-none select-none">
+<span>1. Phòng khám có chỗ gửi ô tô và có mất phí gửi xe không?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Tất cả các cơ sở của HealthCare đều có bãi đỗ xe ô tô và xe máy tại tầng hầm hoặc khuôn viên toà nhà, <strong class="text-primary font-semibold">miễn phí 100%</strong> cho toàn bộ bệnh nhân và người nhà đi cùng. Đội ngũ an ninh sẽ hỗ trợ hướng dẫn đỗ xe và che chắn ô dù chu đáo.
+          </div>
+</details>
+<!-- Accordion 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-title-md font-title-md text-on-surface cursor-pointer list-none select-none">
+<span>2. Tôi cần chuẩn bị gì khi đến lấy kết quả xét nghiệm hoặc trích sao bệnh án điện tử?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Bạn vui lòng mang theo Căn cước công dân (CCCD) gắn chip hoặc hộ chiếu để đối chiếu thông tin bảo mật theo luật Khám bệnh, Chữa bệnh. Ngoài ra, bạn hoàn toàn có thể tra cứu và tải kết quả xét nghiệm, đơn thuốc số hoá trực tuyến thông qua ứng dụng di động <em>HealthCare CareHub</em> hoặc qua đường link bảo mật gửi trực tiếp đến SMS/Zalo của bạn.
+          </div>
+</details>
+<!-- Accordion 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-title-md font-title-md text-on-surface cursor-pointer list-none select-none">
+<span>3. Làm thế nào để nhận báo giá gói khám sức khỏe định kỳ cho công ty/doanh nghiệp?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Phòng Dịch vụ Khách hàng Doanh nghiệp của HealthCare chuyên thiết kế gói khám linh hoạt theo Thông tư 32/BYT và ngân sách của từng tổ chức. Quý doanh nghiệp có thể gửi yêu cầu trực tiếp qua email: <a class="text-primary font-bold underline" href="mailto:doanhnghiep@healthcare.vn">doanhnghiep@healthcare.vn</a> hoặc gọi đường dây nóng phụ trách doanh nghiệp: 0918 22 6868 để nhận báo giá chi tiết trong 2 giờ.
+          </div>
+</details>
+<!-- Accordion 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-title-md font-title-md text-on-surface cursor-pointer list-none select-none">
+<span>4. Tôi có được xuất hóa đơn điện tử VAT và chứng từ bảo hiểm tư nhân ngay trong ngày không?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Có. Hệ thống thanh toán tự động của HealthCare phát hành Hóa đơn điện tử VAT gửi trực tiếp qua email người bệnh trong vòng 30 phút sau khi hoàn tất lượt khám. Toàn bộ bảng kê chi phí, chỉ định cận lâm sàng và toa thuốc đều được đóng dấu mộc chuẩn y tế để phục vụ thanh toán bảo hiểm tư nhân (Bảo Việt, PTI, Liberty, Prudential, Manulife,...).
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT 2: Footer (Clinical Warmth with Regulatory Credentials) -->
+<!-- ========================================================================= -->
+<footer class="docked full-width bg-inverse-surface border-t border-outline/20 text-surface-container-highest">
+<div class="w-full py-12 px-6 lg:px-8 max-w-7xl mx-auto">
+<!-- Top Grid: Brand & Branches -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-outline-variant/20">
+<!-- Col 1: Brand & Certification (Spans 2 on desktop) -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-inverse-primary flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-2xl" data-icon="local_hospital">local_hospital</span>
+</div>
+<span class="text-headline-md font-headline-md font-bold text-inverse-on-surface">HealthCare</span>
+</div>
+<p class="text-body-md font-body-md text-outline-variant max-w-sm leading-relaxed">
+            Hệ thống Phòng khám Đa khoa Tiêu chuẩn Quốc tế. Đem lại trải nghiệm y tế tận tâm, minh bạch và an toàn tuyệt đối cho người bệnh và gia đình tại Việt Nam.
+          </p>
+<!-- Accreditation Badges -->
+<div class="flex items-center gap-3 pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-surface-container-low/10 text-inverse-primary text-label-sm font-label-sm font-bold border border-outline/30">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+              ISO 15189:2012
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-surface-container-low/10 text-inverse-primary text-label-sm font-label-sm font-bold border border-outline/30">
+<span class="material-symbols-outlined text-sm" data-icon="shield">shield</span>
+              JCI Accredited Quality
+            </span>
+</div>
+</div>
+<!-- Col 2: Hệ thống cơ sở Hà Nội -->
+<div>
+<h4 class="text-label-lg font-label-lg font-bold text-inverse-on-surface mb-3">Hà Nội</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-outline-variant">
+<li><strong>Cơ sở Hoàn Kiếm:</strong> 45 Lý Thường Kiệt, Q. Hoàn Kiếm</li>
+<li><strong>Cơ sở Long Biên:</strong> 120 Nguyễn Văn Cừ, Q. Long Biên</li>
+<li><span class="text-inverse-primary">Hotline khám bệnh:</span> (024) 3939 6868</li>
+</ul>
+</div>
+<!-- Col 3: Hệ thống cơ sở TP.HCM -->
+<div>
+<h4 class="text-label-lg font-label-lg font-bold text-inverse-on-surface mb-3">TP. Hồ Chí Minh</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-outline-variant">
+<li><strong>Cơ sở Bến Nghé:</strong> 82 Lê Thánh Tôn, Quận 1</li>
+<li><span class="text-inverse-primary">Hotline khám bệnh:</span> (028) 3822 6868</li>
+<li>Khám Nhi &amp; Cấp cứu: Trực 24/7</li>
+</ul>
+</div>
+<!-- Col 4: Hỗ trợ khẩn cấp -->
+<div>
+<h4 class="text-label-lg font-label-lg font-bold text-inverse-on-surface mb-3">Kênh hỗ trợ</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-outline-variant">
+<li>Tổng đài: <strong class="text-inverse-on-surface">1900 6868</strong></li>
+<li>Cấp cứu 24/7: <strong class="text-error-container">(024) 7300 6868</strong></li>
+<li>Bảo hiểm: baohiem@healthcare.vn</li>
+<li>CSKH: cskh@healthcare.vn</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar: Regulatory Details, Policy Links & Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-outline-variant">
+<!-- Copyright & Regulatory Permit Number -->
+<p class="text-center md:text-left">
+          © 2024 HealthCare Clinic Vietnam. Giấy phép hoạt động khám chữa bệnh số 0868/BYT-GPHĐ. Bảo lưu mọi quyền.
+        </p>
+<!-- Mandatory Links from Shared Components JSON -->
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-md font-label-md">
+<a class="hover:text-primary-fixed transition-colors duration-150" href="contact.html">Chính sách bảo mật</a>
+<a class="hover:text-primary-fixed transition-colors duration-150" href="contact.html">Điều khoản sử dụng</a>
+<a class="hover:text-primary-fixed transition-colors duration-150" href="booking.html">Quy trình khám chữa bệnh</a>
+<a class="hover:text-primary-fixed transition-colors duration-150" href="services.html">Bảng giá niêm yết</a>
+<a class="hover:text-primary-fixed transition-colors duration-150" href="booking.html">Hệ thống phòng khám</a>
+</div>
+</div>
+</div>
+</footer>
+  <script src="app.js"></script>
+</body></html>
